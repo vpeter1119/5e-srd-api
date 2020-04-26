@@ -1,6 +1,6 @@
 <h2 id="classes">Classes</h2>
 <p>
-  A character class is a fundamental part of the identity and nature of characters in the Dungeons &
+  A character class is a fundamental part of the identity and nature of characters in the Dungeons &amp;
   Dragons role-playing game. A character's capabilities, strengths, and weaknesses are largely
   defined by its class. A character's class affects a character's available skills and abilities.
 </p>
@@ -453,7 +453,38 @@
       <th align="left">Data Type</th>
     </tr>
   </thead>
-  <tbody></tbody>
+  <tbody>
+	  <tr>
+		  <td align="left">class</td>
+		  <td align="left">The class specified in {index}</td>
+		  <td align="left"><a href="#namedapiresource">NamedAPIResource</a></td>
+	  </tr>
+	  <tr>
+		  <td align="left">_id</td>
+		  <td align="left">The string _id used by the database for this ability score resource</td>
+		  <td align="left">string</td>
+	  </tr>
+	  <tr>
+		  <td align="left">index</td>
+		  <td align="left">The resource index for shorthand searching</td>
+		  <td align="left">integer</td>
+	  </tr>
+	  <tr>
+		  <td align="left">level</td>
+		  <td align="left">The class level on which the Spellcasting feature becomes available for class {index}</td>
+		  <td align="left">integer</td>
+	  </tr>
+	  <tr>
+		  <td align="left">spellcasting_ability</td>
+		  <td align="left">The ability score used to calculate spell attack bonus and spell save DC</td>
+		  <td align="left"><a href="#namedapiresource">NamedAPIResource</a></td>
+	  </tr>
+	  <tr>
+		  <td align="left">info</td>
+		  <td align="left">A list of sections in the Spellcasing feature</td>
+		  <td align="left">list</td>
+	  </tr>
+  </tbody>
 </table>
 
 <h3>GET api/classes/{index}/spells/</h3>
@@ -722,7 +753,7 @@
     </tr>
     <tr>
       <td align="left">index</td>
-      <td align="left">The level index for shorthand searching<.</td>
+      <td align="left">The level index for shorthand searching</td>
       <td align="left">string</td>
     </tr>
     <tr>
